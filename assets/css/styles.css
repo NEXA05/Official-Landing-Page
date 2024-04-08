@@ -1062,3 +1062,99 @@ input {
       grid-template-columns: 1fr;
   }
 }
+/* CSS for mobile phones */
+@media (max-width: 576px) {
+  /* Adjustments for header */
+  .nav {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .nav__menu {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .nav__link {
+    text-align: center;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  /* Adjustments for homepage */
+  .home__container {
+    height: auto;
+    grid-template-rows: auto;
+    padding-top: 80px; /* Adjust according to header height */
+    padding-bottom: 4rem;
+  }
+
+  .home__social {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  /* Adjustments for about section */
+  .about__container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__img {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  /* Adjustments for discover section */
+  .discover__container {
+    width: auto;
+    padding: 2rem;
+  }
+
+  /* Adjustments for experience section */
+  .experience__container {
+    padding: 2rem;
+  }
+
+  .experience__content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .experience__overlay {
+    width: auto;
+    margin-right: 0;
+  }
+
+  /* Adjustments for footer */
+  .footer__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__rights {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1rem;
+  }
+
+  /* Adjustments for scroll-up button */
+  .scrollup {
+    right: 1rem;
+    bottom: 2rem;
+  }
+
+  /* Remove horizontal scrollbar */
+  body {
+    overflow-x: hidden;
+  }
+}
